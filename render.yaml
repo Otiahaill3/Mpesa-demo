@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mpesa-demo
+    env: php
+    buildCommand: composer install --no-dev -o
+    startCommand: php artisan serve --host=0.0.0.0 --port $PORT
